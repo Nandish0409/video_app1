@@ -6,8 +6,9 @@ import 'package:video_app1/resources/firebase_repository.dart';
 import 'package:video_app1/screens/homescreen.dart';
 import 'package:video_app1/screens/loginscreen.dart';
 
-void main() {
-  Firebase.initializeApp();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
