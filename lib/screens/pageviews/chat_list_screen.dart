@@ -103,12 +103,7 @@ class _ChatListContainerState extends State<ChatListContainer> {
               constraints: BoxConstraints(maxHeight: 60, maxWidth: 60),
               child: Stack(
                 children: <Widget>[
-                  CircleAvatar(
-                    maxRadius: 30,
-                    backgroundColor: Colors.grey,
-                    backgroundImage: NetworkImage(
-                        "https://yt3.ggpht.com/a/AGF-l7_zT8BuWwHTymaQaBptCy7WrsOD72gYGp-puw=s900-c-k-c0xffffffff-no-rj-mo"),
-                  ),
+                  CircleAvatar(maxRadius: 30, backgroundColor: Colors.grey),
                   Align(
                     alignment: Alignment.bottomRight,
                     child: Container(
